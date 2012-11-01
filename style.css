@@ -1,0 +1,44 @@
+body{
+	background-color: #000054;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	color: white;
+}
+
+.tile{
+	border: thin solid white;
+	display: inline-block;
+	height: 80px;
+	width: 140px;
+	padding-top: 40px;
+	background-color: green;
+	text-align: center;
+	margin: .5%;
+	cursor: pointer;
+}
+.spacertile{
+	border: thin solid white;
+	display: inline-block;
+	height: 80px;
+	width: 140px;
+	padding-top: 40px;
+	background-color: green;
+	text-align: center;
+	margin: .5%;
+	cursor: pointer;
+}
+
+.tile a{
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+.tile:hover{
+	background-color: purple;
+}
