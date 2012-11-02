@@ -25,7 +25,7 @@ h2{
 }
 
 .tile{
-	border: thin solid white;
+	/*border: thin solid white;*/
 	display: inline-block;
 	height: 80px;
 	width: 140px;
@@ -34,12 +34,12 @@ h2{
 	text-align: center;
 	margin: .5%;
 	cursor: pointer;
+	box-shadow: 5px 5px 1px rgba(0,0,0,0.42);
 }
 
 
 .tile a{
 	color: white;
-	padding: 20px;
 	text-align: center;
 }
 
