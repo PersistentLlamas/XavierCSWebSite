@@ -3,6 +3,7 @@
 		<title>Xavier Computer Science</title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 		<script type="text/javascript" src="jquery.easing.1.3.js"></script>
         <script type="text/javascript">
             $(function() {
@@ -13,11 +14,23 @@
                 });
             });
         </script>
+        <script type="text/javascript">
+	        function tick(){
+				$('#ticker li:first').animate({'opacity':0}, 200, function () { $(this).appendTo($('#ticker')).css('opacity', 1); });
+			}
+			setInterval(function(){ tick () }, 4000);
+        </script>
 	</head>
 	<body>
 		
+		<div class="title">
+			<img src="./images/csLogo.png"/>
+		</div>
 		<br />
-		<h1 style="margin-left: 50px">Xavier Computer Science</h1>
+		<br />
+		<br />
+		<br />
+		<br />
 		<br />
 		<br />
 		 <ul class="nav">
@@ -62,7 +75,7 @@
 					<a href="#">Dr. Gary</br>Lewandowski</a>
 				</div>
 				<div class="notificationtile">
-					<a href="#">FUNCTIONAL</br>LANGUAGES</a>
+					<a href="#">FUNCTIONAL </br>LANGUAGES</a>
 				</div>
 				<br/>
 				<div class="tile">
