@@ -9,6 +9,7 @@ body{
     top:0px;
     left:0px;
     bottom:0px;
+    background-image: url("./images/dtile.gif");
 }
 
 a{
@@ -17,6 +18,7 @@ a{
 
 h1{
 	color: white;
+	position: fixed;
 }
 
 h2{
@@ -24,19 +26,55 @@ h2{
 	color: white;
 }
 
+ul{
+    list-style:none;
+    margin:20px 0px 0px 550px;
+}
+ul li{
+    float:left;
+    padding:5px;
+    margin:5px;
+    color:#aaa;
+}
+ul li a{
+    display:block;
+    color:#f0f0f0;
+}
+ul li a:hover{
+    text-decoration:none;
+    color:#fff;
+}
+
+
 .tile{
 	/*border: thin solid white;*/
 	display: inline-block;
 	height: 80px;
 	width: 140px;
 	padding-top: 40px;
-	background-color: green;
+	background-color: #081b75;
 	text-align: center;
 	margin: .5%;
 	cursor: pointer;
 	box-shadow: 5px 5px 1px rgba(0,0,0,0.42);
 }
 
+.notificationTile{
+	/*border: thin solid white;*/
+	display: inline-block;
+	height: 80px;
+	width: 200px;
+	padding-top: 40px;
+	background-color: #081b75;
+	text-align: center;
+	margin: .5%;
+	cursor: pointer;
+	box-shadow: 5px 5px 1px rgba(0,0,0,0.42);
+}
+
+.nav{
+	position: fixed;
+}
 
 .tile a{
 	color: white;
@@ -44,7 +82,7 @@ h2{
 }
 
 .tile:hover{
-	background-color: purple;
+	background-color: #5babdd;
 }
 
 .tileSection{
@@ -58,6 +96,7 @@ h2{
     width:850px;
     float:left;
     height:100%;
+    padding: 20px;
     
 }
 .section h2{
@@ -68,44 +107,6 @@ h2{
     width:600px;
 }
 .black{
-    color:#fff;
-   
-    background:inherit;
-}
-.white{
-    color:#000;
-    background:#fff url(../images/white.jpg) no-repeat top right;
+    color:#fff;   
 }
 
-.section ul{
-    list-style:none;
-    margin:20px 0px 0px 550px;
-}
-.black ul li{
-    float:left;
-    padding:5px;
-    margin:5px;
-    color:#aaa;
-}
-.black ul li a{
-    display:block;
-    color:#f0f0f0;
-}
-.black ul li a:hover{
-    text-decoration:none;
-    color:#fff;
-}
-.white ul li{
-    float:left;
-    padding:5px;
-    margin:5px;
-    color:#aaa;
-}
-.white ul li a{
-    display:block;
-    color:#222;
-}
-.white ul li a:hover{
-    text-decoration:none;
-    color:#000;
-}

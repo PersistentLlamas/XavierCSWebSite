@@ -8,15 +8,7 @@
             $(function() {
                 $('ul.nav a').bind('click',function(event){
                     var $anchor = $(this);
-                    /*
-                    if you want to use one of the easing effects:
-                    $('html, body').stop().animate({
-                        scrollLeft: $($anchor.attr('href')).offset().left
-                    }, 1500,'easeInOutExpo');
-                     */
-                    $('html, body').stop().animate({
-                        scrollLeft: $($anchor.attr('href')).offset().left
-                    }, 350);
+                    $('html, body').stop().animate({scrollLeft: $($anchor.attr('href')).offset().left}, 350);
                     event.preventDefault();
                 });
             });
@@ -27,6 +19,12 @@
 		<br />
 		<h1 style="margin-left: 50px">Xavier Computer Science</h1>
 		<br />
+		<br />
+		 <ul class="nav">
+                <li><a href="#section1">COURSES</li>
+                <li><a href="#section2">PROFESSORS</a></li>
+                <li><a href="#section3">ETC</a></li>
+            </ul>
 		<div class="section black" id="section1">
 				<div class="tileSection">
 					<h2 style="margin-left: 0px;">Courses: Fall 2012</h2>
@@ -55,11 +53,6 @@
 						<a href="#">CSCI 380</br>Lewandowski</a>
 					</div>
 			</div>
-			 <ul class="nav">
-                <li style="font-weight:light;">COURSES</li>
-                <li><a href="#section2">PROFESSORS</a></li>
-                <li><a href="#section3">ETC</a></li>
-            </ul>
 		</div>
 		<div class="section black" id="section2">
 			<div class="tileSection">
@@ -68,18 +61,25 @@
 				<div class="tile">
 					<a href="#">Dr. Gary</br>Lewandowski</a>
 				</div>
+				<div class="notificationtile">
+					<a href="#">FUNCTIONAL</br>LANGUAGES</a>
+				</div>
+				<br/>
 				<div class="tile">
 					<a href="#">Dr. Michael</br>Goldweber</a>
 				</div>
+				<div class="notificationtile">
+					<a href="#">ABSTRACTION</br>STUFFS</a>
+				</div>
+				<br />
 				<div class="tile">
 					<a href="#">Dr. Elizabeth</br>Johnson</a>
 				</div>
+				<div class="notificationtile">
+					<a href="#">STRUCTURES</br>OF DATA</a>
+				</div>
 			</div>
-			 <ul class="nav">
-                <li><a href="#section1">COURSES</li>
-                <li>PROFESSORS</li>
-                <li><a href="#section3">ETC</a></li>
-            </ul>
+
 		</div>
 		<div class="section black" id="section3">
 			<div class="tileSection">
@@ -95,11 +95,6 @@
 					<a href="#">Dr. d</br>d</a>
 				</div>
 			</div>
-			<ul class="nav">
-                <li><a href="#section1">COURSES</li>
-                <li><a href="#section2">PROFESSORS</li>
-                <li>ETC</li>
-            </ul>
 		</div>
 	</body>
 </html>
