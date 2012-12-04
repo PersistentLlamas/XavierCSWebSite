@@ -2,14 +2,16 @@
 	<head>
 		<title>Xavier Computer Science</title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-		<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+				
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
         <script type="text/javascript">
             $(function() {
                 $('ul.nav a').bind('click',function(event){
                     var $anchor = $(this);
-                    $('html, body').stop().animate({scrollLeft: $($anchor.attr('href')).offset().left}, 350);
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 500);
                     event.preventDefault();
                 });
             });
@@ -39,27 +41,27 @@
 					<h2 style="margin-left: 0px;">Courses: Fall 2012</h2>
 					<br />
 					<div class="tile">
-						<a href="#">CSCI 170</br>Lewandowski</a>
+						<a href="http://www.cs.xu.edu/csci170/12f/01/">CSCI 170</br>Lewandowski</a>
 					</div>
 					<div class="tile">
-						<a href="#">CSCI 170</br>Johnson</a>
+						<a href="http://www.cs.xu.edu/csci170/12f/02/">CSCI 170</br>Johnson</a>
 					</div>
 					<div class="tile">
-						<a href="#">CSCI 210</br>Goldweber</a>
-					</div>
-					<br />
-					<div class="tile">
-						<a href="#">CSCI 220</br>Johnson</a>
-					</div>
-					<div class="tile">
-						<a href="#">CSCI 300</br>Lewandowski</a>
-					</div>
-					<div class="tile">
-						<a href="#">CSCI 320</br>Goldweber</a>
+						<a href="http://www.cs.xu.edu/csci210/12f/">CSCI 210</br>Goldweber</a>
 					</div>
 					<br />
 					<div class="tile">
-						<a href="#">CSCI 380</br>Lewandowski</a>
+						<a href="http://www.cs.xu.edu/csci220/12f/">CSCI 220</br>Johnson</a>
+					</div>
+					<div class="tile">
+						<a href="http://www.cs.xu.edu/csci300/12f/">CSCI 300</br>Lewandowski</a>
+					</div>
+					<div class="tile">
+						<a href="http://www.cs.xu.edu/csci320/12f/">CSCI 320</br>Goldweber</a>
+					</div>
+					<br />
+					<div class="tile">
+						<a href="http://www.cs.xu.edu/csci380/12f/">CSCI 380</br>Lewandowski</a>
 					</div>
 			</div>
 		</div>
@@ -68,25 +70,15 @@
 				<h2 style="margin-left: 0px;">Faculty</h2>
 				<br />
 				<div class="tile">
-					<a href="#">Dr. Gary</br>Lewandowski</a>
+					<a href="http://www.cs.xu.edu/~lewandow/">Dr. Gary</br>Lewandowski</a>
 				</div>
-				<div class="notificationtile">
-				<span>Functional</br>Languages</span>
-				</div>
-				<br/>
 				<div class="tile">
-					<a href="#">Dr. Michael</br>Goldweber</a>
+					<a href="http://www.cs.xu.edu/~mikeyg/">Dr. Michael</br>Goldweber</a>
 				</div>
-				<div class="notificationtile">
-					<span>ABSTRACTION</br>STUFFS</span>
-				</div>
-				<br />
 				<div class="tile">
-					<a href="#">Dr. Elizabeth</br>Johnson</a>
+					<a href="http://www.cs.xu.edu/~ejohnson/">Dr. Elizabeth</br>Johnson</a>
 				</div>
-				<div class="notificationtile">
-					<span>MOAR</br> Stuffs</span>
-				</div>
+
 			</div>
 
 		</div>
@@ -95,23 +87,23 @@
 				<h2 style="margin-left: 0px;">Department Information</h2>
 				<br />
 				<div class="tile">
-					<a href="#">General</br>Information</a>
+					<a href="http://www.xavier.edu/cs/">General</br>Information</a>
 				</div>
 				<div class="tile">
-					<a href="#">Course</br>Description</a>
+					<a href="http://www.xavier.edu/registrar/course/csci.html">Course</br>Description</a>
 				</div>
 				<div class="tile">
-					<a href="#">Course</br>Sequences</a>
+					<a href="http://www.xavier.edu/cs/Course-Sequence.cfm">Course</br>Sequences</a>
 				</div>
 				<br />
 				<div class="tile">
-					<a href="#">CO-OP</br>Program</a>
+					<a href="http://www.cs.xu.edu/~lewandow/coop/">CO-OP</br>Program</a>
 				</div>
 				<div class="tile">
-					<a href="#">Summer</br>Internships</a>
+					<a href="http://cerebro.xu.edu/summerinternships.html">Summer</br>Internships</a>
 				</div>
 				<div class="tile">
-					<a href="#">CSCI</br>Alumni</a>
+					<a href="http://cerebro.xu.edu/~helmick/alumni.html">CSCI</br>Alumni</a>
 				</div>
 				<br />
 				<div class="tile">
@@ -127,5 +119,6 @@
 				</div>
 			</div>
 		</div>
+
 	</body>
 </html>
